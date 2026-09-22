@@ -11,12 +11,3 @@
             3 => "Se ha escogido la tercera opcion",
         };
     */
-
-    //2 => El martes es par
-    //5 => El viernes es impar
-
-    $numero = 2;
-    $res = match($numero){
-        2 === "El martes es par",
-        5 === "El vierenes es impar"
-    };
