@@ -1,21 +1,67 @@
-//VARIABLE
-// let - var
+//Coecion de tipos en JS
 
-/*
-console.log(num);
-num = "Hola!!";
-num = true;
-console.log(num);
+/*Comportamiendo de lenguajes de programacion convirtiendo el valor de una variable de un tipo a otro, Al ser un lenguaje interpretado, y no tener compilador, lo hace automatico y sin avisar. */
 
-otra = "adios";
-console.log(otra);
-*/
+//Implicita (automatica)
 
-let edad = 70;
-let titulo = "algo";
-let num = null;
-let otra = "3" + "9";
+let num = 42;
+let string = "2";
 
-console.log(num);
-console.log(typeof(num));
+//---------------//
+//Operaciones Arig//
 
+let suma = num + string;
+let rest = num - string;
+let mult = num * string;
+let divs = num / string;
+
+console.log(suma);
+console.log(typeof(suma));
+
+console.log(rest);
+console.log(typeof(rest));
+
+console.log(mult);
+console.log(typeof(mult));
+
+console.log(divs);
+console.log(typeof(divs));
+
+//---------------//
+//Operaciones Log// 
+
+let igual = (0 == "0");
+let igual2 = (0 === "0");
+
+console.log(igual);
+console.log(typeof(igual));
+
+console.log(igual2);
+console.log(typeof(igual2));
+
+//---------------//
+//Operaciones Booleanos//
+
+let num2 = 42;
+let boo = true;
+
+let ej = num2 + boo;
+
+console.log(ej);
+console.log(typeof(ej));
+
+//---------------//
+
+//Explicita (casteo [forzar como programador])
+
+let ej_expl = 45;
+let ej_expl2 = true;
+
+let res = "cadena";
+
+console.log(String(ej_expl));
+console.log(typeof(res));
+
+//String()
+//Number()
+//Boolean()
