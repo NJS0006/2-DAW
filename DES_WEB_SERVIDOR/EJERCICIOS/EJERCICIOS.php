@@ -45,3 +45,53 @@ function notas ($numDec){
             echo "La persona tiene un Sobresaliente"; 
     }
 }
+
+
+
+//EJERCICIO 3
+/* Crear una función llamada meses que, dependiendo del número que entre y haciendo uso del match, devolverá el nombre del mes correspondiente. ¡¡IMPORTANTE!! Controlad que el número no sea menor a 1 o mayor a 12 */
+$mes = 1;
+function meses(){
+    if(($mes < 1) && ($mes > 12)){
+        echo "No hay menos de 1 mes, ni mas de 12 GLIPOLLAS";
+    }
+    else{
+        $nombreMes = match ($mes) {
+            1 => 'Enero',
+            2 => 'Febrero',
+            3 => 'Marzo',
+            4 => 'Abril',
+            5 => 'Mayo',
+            6 => 'Junio',
+            7 => 'Julio',
+            8 => 'Agosto',
+            9 => 'Septiembre',
+            10 => 'Octubre',
+            11 => 'Noviembre',
+            default => 'DICIEMBRE',
+        }
+        echo $nombreMes;
+    }
+}
+
+
+
+//EJERCICIO 4
+/* Crea una función llamada calculadora que tenga 3 parámetros. Dos números y un string. Usar un switch para mostrar el resultado de la operación correspondiente. Las operaciones aceptadas serán: suma, resta, multiplicación y exponente. */
+
+function calculadora($num, $num2, $palabra){
+    $suma = $num + $num2;
+    $resta = $num - $num2;
+    $mult = $num * $num2;
+    $expo = $num % $num2;
+
+    switch ($variable) {
+        case 'value':
+            # code...
+            break;
+        
+        default:
+            # code...
+            break;
+    }
+}
