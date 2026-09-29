@@ -16,10 +16,10 @@
         
         while ($num < 200){
             if(($num % 7 == 0) && ($num % 3 != 0)) {
-              ?>
-              <li>Numero: <?php echo $num;?></li>
-              <?php
-              $cont++;
+                ?>
+                <li>Numero: <?php echo $num;?></li>
+                <?php
+                $cont++;
             }
             $num++;
         ?>

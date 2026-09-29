@@ -6,23 +6,24 @@ echo "<br>";
 echo '-----';
 echo "<br>";
 
-function notas ($numDec){
-    switch ($numDec){
-        case ($numDec < 5):
-            echo "El usuario está suspenso";
+function notas ($parDecimal){
+    switch ($parDecimal){;
+        case ($parDecimal < 5):
+            echo "El alumno está suspenso";
             break;
-        case (($numDec >= 5) || ($numDec <= 6)):
-            echo "El usuario está aprobado";
+        case (($parDecimal >= 5) && ($parDecimal <= 6)):
+            echo "El alumno está aprobado";
             break;
-        case (($numDec >= 7) || ($numDec <= 8)):
-            echo "El usuario tiene Notable";
+        case (($parDecimal >= 7) && ($parDecimal <= 8)):
+            echo "El alumno está en Notable";
             break;
-        case ($numDec < 0):
-            echo "No es posible una nota negativa (osea si pero no)";
+        case (($parDecimal >= 9)&&($parDecimal <= 10)):
+            echo "El alumno esta Sobresaliente";
             break;
         default:
-            echo "La persona tiene un Sobresaliente"; 
-    }
+            echo "No es una nota validad y/o esta fuera del limite";
+    };
 }
-notas(6.4);
+
+notas();
 ?>

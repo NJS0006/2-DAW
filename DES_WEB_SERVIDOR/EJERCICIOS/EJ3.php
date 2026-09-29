@@ -6,22 +6,23 @@ echo "<br>";
 echo '-----';
 echo "<br>";
 
-function meses ($numeroMes){
-    return match ($numeroMes) {
-        1 => 'Enero',
-        2 => 'Febrero',
-        3 => 'Marzo',
-        4 => 'Abril',
-        5 => 'Mayo',
-        6 => 'Junio',
-        7 => 'Julio',
-        8 => 'Agosto',
-        9 => 'Septiembre',
-        10 => 'Octubre',
-        11 => 'Noviembre',
-        12 => 'Diciembre',
-        default => 'El mes no puede ser ni menor que 1 ni mayor que 12 (gilipollas)'
+function meses ($numMes){
+    return match ($numMes) {
+        1 => "Enero",
+        2 => "Febrero",
+        3 => "Marzo",
+        4 => "Abril",
+        5 => "Mayo",
+        6 => "Junio",
+        7 => "Julio",
+        8 => "Agosto",
+        9 => "Septiembre",
+        10 => "Octubre",
+        11 => "Noviembre",
+        12 => "DICIEMBRE",
+        default => "No se puede gilipollas"
     };
 }
-echo meses(24);
+
+echo meses(5);
 ?>

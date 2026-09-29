@@ -16,8 +16,8 @@
         
         while ($num >= 0){
             if(($num % 2 == 0) && ($num % 6 != 0)) {
-              echo "$num <br>";
-              $cont++;
+                echo "$num <br>";
+                $cont++;
             }
             $num--;
             $suma = $suma + $num;  
