@@ -2,9 +2,9 @@
 echo '//EJERCICIO 3// <br>';
 echo 'Crear una función llamada meses que, dependiendo del número que entre y haciendo uso del match, devolverá el nombre del mes correspondiente. ¡¡IMPORTANTE!! Controlad que el número no sea menor a 1 o mayor a 12 ';
 
-echo $salto;
+echo "<br>";
 echo '-----';
-echo $salto;
+echo "<br>";
 
 function meses ($numeroMes){
     return match ($numeroMes) {

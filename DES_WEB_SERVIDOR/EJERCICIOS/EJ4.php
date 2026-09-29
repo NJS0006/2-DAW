@@ -1,9 +1,10 @@
 <?php
 echo "//EJERCICIO 4// <br>";
 echo "Crea una función llamada calculadora que tenga 3 parámetros. Dos números y un string. Usar un switch para mostrar el resultado de la operación correspondiente. Las operaciones aceptadas serán: suma, resta, multiplicación y exponente.";
-echo $salto;
+
+echo "<br>";
 echo '-----';
-echo $salto;
+echo "<br>";
 
 function calculadora($num1, $num2, $operacion){
     switch ($operacion) {

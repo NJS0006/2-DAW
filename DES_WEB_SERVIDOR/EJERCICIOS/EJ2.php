@@ -2,9 +2,9 @@
 echo '//EJERCICIO 2// <br>';
 echo "Crea una funcion llamada notas que contenga un parametro decimal. Si la nota es menor que 5, se mostrara por pantalla la palabra suspenso. Si la nota esta entre 5 y 6, se mostrara Aprobado, si está entre 7 y 8 Notable y si es 9 o 10 Sobresaliente";
 
-echo $salto;
+echo "<br>";
 echo '-----';
-echo $salto;
+echo "<br>";
 
 function notas ($numDec){
     switch ($numDec){

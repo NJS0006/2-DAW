@@ -1,9 +1,10 @@
 <?php  
 echo "//EJERCICIO 5// <br>";
 echo "Crea una función llamada analizarNumero(int n, int min, int max):string que devuelva fuera de rango si n es manor del rango minimo o n es mayor del rango maximo. Si está dentro del rango indicar si es par o impar, y ademas, si está en los bordes.";
-echo $salto;
+
+echo "<br>";
 echo '-----';
-echo $salto;
+echo "<br>";;
 
 function analizarNumero($n, $min, $max){
     if(($n > $min)&&($n < $max)){
