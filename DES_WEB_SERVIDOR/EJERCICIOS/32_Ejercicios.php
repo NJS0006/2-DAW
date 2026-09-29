@@ -29,7 +29,9 @@
         echo "La suma de todos los numeros es (suma): $suma<br>";
         echo "La media es (media): $media<br>";
     ?>
-    
+
+<hr>
+
     <h2>EJERCICIO 2</h2>
     <p>Recorre del 1 hasta el 200 con un while, seleccionando los multiplos de 7 que no sean multiplos de 3. Muestra cada seleccionado en un li dentro de una lista ordenada. Cuando hayas acabado de mostrar todo, fuera de la lista. enseña la cantidad de numeros que hay, su suman y su media</p>
     <ul>

@@ -1,8 +1,16 @@
 <?php
+$salto = "<br>";
+$dobleSalto = "<br><br>";
+?>
 
-//EJERCICIO 1
-/* Crea una funcion llamada "edad" que haciendo uso de la estructura de control switch muestre por pantalla si una persona es menor de edad, adulta, jubilada o anciana. Adulta (18-67 años) y jubilada (67>). hacer una llamada a la funcion con u numero random del 1 al 100. 
-IMPORTANTE: Controlar que el numero NUNCA pueda ser negativo. */
+<?php
+echo "//EJERCICIO 1// <br>";
+echo "Crea una funcion llamada edad que haciendo uso de la estructura de control switch muestre por pantalla si una persona es menor de edad, adulta, jubilada o anciana. Adulta (18-67 años) y jubilada (67>). hacer una llamada a la funcion con u numero random del 1 al 100. 
+IMPORTANTE: Controlar que el numero NUNCA pueda ser negativo.";
+
+echo $salto;
+echo '-----';
+echo $salto;
 
 $numRand = rand(1, 100);
 function edad ($numRand){
@@ -21,12 +29,22 @@ function edad ($numRand){
     }
 }
 
+?>
 
+<?php
+echo $dobleSalto;
+echo '---------------';
+echo $dobleSalto;
+?>
 
-//EJERCICIO 2
-/* Crea una funcion llamada notas que contenga un parametro decimal. Si la nota es menor que 5, se mostrara por pantalla la palabra "suspenso". Si la nota esta entre 5 y 6, se mostrara "Aprobado", si está entre 7 y 8 "Notable" y si es 9 o 10 "Sobresaliente" */
+<?php
+echo '//EJERCICIO 2// <br>';
+echo "Crea una funcion llamada notas que contenga un parametro decimal. Si la nota es menor que 5, se mostrara por pantalla la palabra suspenso. Si la nota esta entre 5 y 6, se mostrara Aprobado, si está entre 7 y 8 Notable y si es 9 o 10 Sobresaliente";
 
-$numDec = 6.7;
+echo $salto;
+echo '-----';
+echo $salto;
+
 function notas ($numDec){
     switch ($numDec){
         case ($numDec < 5):
@@ -45,53 +63,98 @@ function notas ($numDec){
             echo "La persona tiene un Sobresaliente"; 
     }
 }
+notas(6.4);
+?>
 
+<?php
+echo $dobleSalto;
+echo '---------------';
+echo $dobleSalto;
+?>
 
+<?php
+echo '//EJERCICIO 3// <br>';
+echo 'Crear una función llamada meses que, dependiendo del número que entre y haciendo uso del match, devolverá el nombre del mes correspondiente. ¡¡IMPORTANTE!! Controlad que el número no sea menor a 1 o mayor a 12 ';
 
-//EJERCICIO 3
-/* Crear una función llamada meses que, dependiendo del número que entre y haciendo uso del match, devolverá el nombre del mes correspondiente. ¡¡IMPORTANTE!! Controlad que el número no sea menor a 1 o mayor a 12 */
-$mes = 1;
-function meses(){
-    if(($mes < 1) && ($mes > 12)){
-        echo "No hay menos de 1 mes, ni mas de 12 GLIPOLLAS";
-    }
-    else{
-        $nombreMes = match ($mes) {
-            1 => 'Enero',
-            2 => 'Febrero',
-            3 => 'Marzo',
-            4 => 'Abril',
-            5 => 'Mayo',
-            6 => 'Junio',
-            7 => 'Julio',
-            8 => 'Agosto',
-            9 => 'Septiembre',
-            10 => 'Octubre',
-            11 => 'Noviembre',
-            default => 'DICIEMBRE',
-        }
-        echo $nombreMes;
-    }
+echo $salto;
+echo '-----';
+echo $salto;
+
+function meses ($numeroMes){
+    return match ($numeroMes) {
+        1 => 'Enero',
+        2 => 'Febrero',
+        3 => 'Marzo',
+        4 => 'Abril',
+        5 => 'Mayo',
+        6 => 'Junio',
+        7 => 'Julio',
+        8 => 'Agosto',
+        9 => 'Septiembre',
+        10 => 'Octubre',
+        11 => 'Noviembre',
+        12 => 'Diciembre',
+        default => 'El mes no puede ser ni menor que 1 ni mayor que 12 (gilipollas)'
+    };
 }
+echo meses(24);
+?>
 
+<?php
+echo $dobleSalto;
+echo '---------------';
+echo $dobleSalto;
+?>
 
+<?php
+echo "//EJERCICIO 4// <br>";
+echo "Crea una función llamada calculadora que tenga 3 parámetros. Dos números y un string. Usar un switch para mostrar el resultado de la operación correspondiente. Las operaciones aceptadas serán: suma, resta, multiplicación y exponente.";
+echo $salto;
+echo '-----';
+echo $salto;
 
-//EJERCICIO 4
-/* Crea una función llamada calculadora que tenga 3 parámetros. Dos números y un string. Usar un switch para mostrar el resultado de la operación correspondiente. Las operaciones aceptadas serán: suma, resta, multiplicación y exponente. */
+function calculadora($num1, $num2, $operacion){
+    switch ($operacion) {
+        case 'suma':
+            $resultado = $num1 + $num2;
+            echo "El resultado de la suma de $num1 y $num2 es: $resultado";
+            break;
 
-function calculadora($num, $num2, $palabra){
-    $suma = $num + $num2;
-    $resta = $num - $num2;
-    $mult = $num * $num2;
-    $expo = $num % $num2;
+        case 'resta':
+            $resultado = $num1 - $num2;
+            echo "El resultado de la resta de $num1 y $num2 es: $resultado";
+            break;
 
-    switch ($variable) {
-        case 'value':
-            # code...
+        case 'multiplicacion':
+            $resultado = $num1 * $num2;
+            echo "El resultado de la multiplicacion de $num1 y $num2 es: $resultado";
+            break;
+
+        case 'exponente':
+            $resultado = $num1 ** $num2;
+            echo "El resultado del exponente de $num1 y $num2 es: $resultado";
             break;
         
         default:
-            # code...
+            echo "Operacion no valida";
             break;
     }
 }
+calculadora(34, 12, "multiplicacion");
+?>
+
+<?php
+echo $dobleSalto;
+echo '---------------';
+echo $dobleSalto;
+?>
+
+<?php  
+echo "//EJERCICIO 5 <br>";
+echo "Crea una función llamada analizarNumero(int n, int min, int max):string que devuelva fuera de rango si n es manor del rango minimo o n es mayor del rango maximo. Si está dentro del rango indicar si es par o impar, y ademas, si está en los bordes.";
+echo $salto;
+echo '-----';
+echo $salto;
+
+
+?>
