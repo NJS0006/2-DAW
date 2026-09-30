@@ -1,0 +1,76 @@
+<!--
+EJERCICIO 5 
+Crea mediante una tabla tu horario de clase de lunes a viernes
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIO 5</title>
+    <style>
+        th{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <table border>
+        <thead>
+            <tr>
+                <th>Hora</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miercoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th>8:30 - 9:00</th>
+                <td rowspan="6">DESARROLLO WEB EN ENTORNO SERVIDOR</td>
+                <td rowspan="6">DESARROLLO WEB EN ENTORNO SERVIDOR</td>
+                <td rowspan="6">DISEÑO DE INTERFACES WEB</td>
+                <td rowspan="6">DESARROLLO WEB EN ENTORNO CLIENTE</td>
+                <td rowspan="6">OPTATIVA</td>
+            </tr>
+            
+            <tr><th>9:00 - 9:30</th></tr>
+            <tr><th>9:30 - 10:00</th></tr>
+            <tr><th>10:00 - 10:30</th></tr>
+            <tr><th>10:30 - 11:00</th></tr>
+            <tr><th>11:00 - 11:30</th></tr>
+
+            <tr>
+                <th>11:30 - 12:00</th>
+                <td colspan="6">DESCNSO</td>
+            </tr>
+
+            <tr>
+                <th>12:00 - 12:30</th>
+                <td rowspan="2">DESPLIEGUE APLICACIONES WEB</td>
+                <td rowspan="6">DESARROLLO WEB ENTORNO CLIENTE</td>
+                <td rowspan="2">DESPLIEGUE APLICACIONES WEB</td>
+                <td rowspan="2">DESARROLLO WEB SERVIDOR</td>
+                <td rowspan="6">IPE II</td>
+            </tr>
+
+            <tr><th>12:30 - 13:00</th></tr>
+
+            <tr>
+                <th>13:00 - 13:30</th>
+                <td rowspan="4">DISEÑO DE INTERFACES WEB</td>
+                <td rowspan="4">ENGLISH</td>
+                <td rowspan="4">PROYECTO INTERMODULAR</td>
+            </tr>
+
+            <tr><th>13:30 - 14:00</th></tr>
+            <tr><th>14:00 - 14:30</th></tr>
+            <tr><th>14:30 - 15:00</th></tr>
+        </tbody>
+    </table>
+</body>
+</html>
