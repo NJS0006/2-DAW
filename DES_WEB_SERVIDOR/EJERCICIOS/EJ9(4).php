@@ -38,7 +38,7 @@
         //Condicion si el numero sobre-pasa el 100 y es par/impar
         else if(($numTotal > 100)&&($numTotal % 2 == 0)){
             echo "<p style='color: red;'>El numero es el $numTotal (ha supedado el 100 y es par)</p>";
-        }
+        } 
         else if ($numTotal % 2 != 0){
             echo "<p style='color: blue;'>El numero es el $numTotal (ha supedado el 100 y es impar)</p>";
         }
