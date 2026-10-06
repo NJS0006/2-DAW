@@ -15,8 +15,7 @@ function arrayEJ2 (array, num){
 
     }
     
-    return "Veces salidas: " + contador + " \n " + 
-    "Primera aparicion: " + priAparicion
+    return [contador, priAparicion];
 }
 
 const numeros = [4, 8, 15, 8, 23, 8, 42];
