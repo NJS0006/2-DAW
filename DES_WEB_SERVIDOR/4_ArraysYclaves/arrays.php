@@ -115,4 +115,15 @@ echo ("$dobleSalto");
     //Sirve para combrobar si una varibale tien un valor distinto a nulo, en el caso en el que esa variable tenga valor nulo se muestra un valor/mensaje alternativo
 
     echo $animales["Anfibios"] ?? "No existe";
+
+echo ("$dobleSalto");
+
+    //COMPARACION
+    $a = ["uno" => 1, "dos" => 2];
+    $b = ["dos" => 2, "uno" => 1];
+
+    var_dump($a == $b); //True; Porque son las mismas asociaciones clave-valor
+    var_dump($a == $b); //False; Por
+    
+    que el orden de insercion de clave-valores es distinto
 ?>
