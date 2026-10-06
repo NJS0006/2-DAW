@@ -110,7 +110,6 @@ echo ("$dobleSalto");
     var_dump((array_key_exists("algo", $animales)));
 
 echo ("$dobleSalto");
-
     //OPERACION DE FUSION NULO
     //PLANTILLA: [array] ?? valor a salir
     //Sirve para combrobar si una varibale tien un valor distinto a nulo, en el caso en el que esa variable tenga valor nulo se muestra un valor/mensaje alternativo
