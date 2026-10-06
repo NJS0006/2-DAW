@@ -123,7 +123,5 @@ echo ("$dobleSalto");
     $b = ["dos" => 2, "uno" => 1];
 
     var_dump($a == $b); //True; Porque son las mismas asociaciones clave-valor
-    var_dump($a == $b); //False; Por
-    
-    que el orden de insercion de clave-valores es distinto
+    var_dump($a == $b); //False; Por que el orden de insercion de clave-valores es distinto
 ?>
