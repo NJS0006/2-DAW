@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIO 2</title>
+</head>
+<body>
+    <h2>Reserva de Entradas</h2>
+    <form>
+        <p>
+            <label>Nombre y apellido</label>
+            <input type="text" id="nombreYapellido">
+        </p>
+
+        <p>
+            <label>Correo Electronico</label>
+            <input type="email" id="CorreoElectronico">
+        </p>
+
+        <p>
+            <label>fecha del concierto</label>
+            <input type="date" id="fechaConcierto">
+        </p>
+
+        <p>
+            <label>Numero Entradas</label>
+            <input type="number" id="numEntradas" min="1" max="6">
+        </p>
+
+        <p>
+            <label>Tipo de entrada: </label>
+        </p>
+
+        <p>
+            <input type="radio" id="radioGeneral">
+            <label>General</label>
+<br>
+            <input type="radio" id="radioPremium">
+            <label>Premium</label>
+<br>        
+            <input type="radio" id="radioVIP">
+            <label>VIP</label>
+        </p>
+        
+        <p>
+            <input type="checkbox" id="checkbox" checked>
+            <label>Deseo recibir las entradas por correo electronico</label>
+        </p>
+
+        <p>
+            <button type="button">Realizar Reserva</button>
+        </p>
+    </form>
+</body>
+</html>

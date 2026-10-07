@@ -1,5 +1,3 @@
-//Crea una funcion que reciba un array (del tamaño que sea) y un numero, A continuacion, la funcion debe devolver el numero de veces que aparece ese numero en el array y la PRIMERA aparicion de este.
-
 function arrayEJ2 (array, num){
     let contador = 0;
     let priAparicion = 0;
