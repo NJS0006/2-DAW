@@ -1,0 +1,26 @@
+* {
+    color: blue;
+}
+
+.Uno{
+    background-color: gray;
+}
+
+.Dos{
+    background-color: yellow;
+}
+
+#parrafo1{
+    border: solid;
+    border-color: black;
+}
+
+#parrafo2{
+    border: solid;
+    border-color: red;
+    color: green;
+}
+
+.ul{
+    color: aquamarine;
+}

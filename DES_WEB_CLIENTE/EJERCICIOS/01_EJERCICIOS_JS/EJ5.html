@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIO 5</title>
+</head>
+<body>
+    <script>        
+        let N;
+
+        //Bucle de validacion de pedida
+        do{
+            var entrada = prompt("Dame un numero entero positivo mayor que 0");
+            N = Number(entrada);
+        }while(isNaN(N) || !Number.isInteger(N) || N <= 0);
+
+        //Divisores y suma de sus cuadrados
+        var sumaCuadrados = 0;
+        var textoDivisores = "Disisores: ";
+        for (let i = 0; i < N; i++) {
+            if(N % i === 0){
+                textoDivisores += i + " ";
+                sumaCuadrados += (i * i);
+            }
+        }
+
+        alert(textoDivisores);
+        alert("Suma de los cuadrados de los divisiores: " + sumaCuadrados);
+    </script>
+</body>
+</html>
