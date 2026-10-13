@@ -27,19 +27,21 @@ echo "<br>";
      * rsort() => Ordena array indexado mayor - menor
      * asort() => Ordena array indexado menor - mayor RESPETANDO LAS CLAVES
      * arsort() => Ordena array indexado mayor - menor RESPETANDO LAS CLAVES
+     * ---------------------------------------------------------
      * ksort() => Ordena array indexado menor - mayor POR CLAVES
      * krsort() => Ordena array indexado mayor - menor POR CLAVES
      */
     $notas = ["Ana" => 7, "Leo" => 9, "Samu" => 3, "Alba" => 4];
-
+/* sort */
     $copia = $notas;
     sort($copia);
     echo "<pre>sort: ";
     print_r($copia);
     echo "</pre>";
 
+    
 echo "<br>";
-
+/* rsort() */
     $copia = $notas;
     rsort($copia);
     echo "<pre>rsort: ";
@@ -47,7 +49,7 @@ echo "<br>";
     echo "</pre>";
 
 echo "<br>";
-
+/* asort() */
     $copia = $notas;
     asort($copia);
     echo "<pre>asort: ";
@@ -55,7 +57,7 @@ echo "<br>";
     echo "</pre>";
 
 echo "<br>";
-
+/* arsort() */
     $copia = $notas;
     arsort($copia);
     echo "<pre>arsort: ";
@@ -107,7 +109,9 @@ echo "<br>";
     //Devuelve un array a partir de una cadena, usando como separador àra crear cada elementos del array el pasado como parametro
     $palabras = explode(",", "una, polla, me, sacan, sangre, durante, 10min");
     print_r($palabras);
+
 echo "<br>";
+
     //IMPLODE
     //PLANTILLA: implode(separador, cadena);
     //Devuelve una cadena a partir de los elementos del array separados por el separador

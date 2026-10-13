@@ -16,7 +16,7 @@
 
     echo $frutas[9].$salto;
 
-    echo "$dobleSalto";
+echo ("$dobleSalto");
 
     //2. ARRAYS ASOCIATIVOS. Son arrays cuya particularidad es que accedemos a los valores de dichos arrays a traves de claves y no por posiciones.
 
@@ -24,7 +24,7 @@
     $personas = ["2adaw" => "Samu", "2bdaw" => "Alguien", "2com" => "alguna tia"];
     echo $personas["2adaw"].$salto;
     
-    echo "$dobleSalto";
+echo ("$dobleSalto");
     
     //Como meter valores nuevos a mi array ya creado antes
     $personas["2tresde"] = "vini";
@@ -35,16 +35,16 @@
 
     //AÑADIR, MODIFICAR Y ELIMINAR ELEMENTOS DENTRO DE UNA ARRAY
     print_r($frutas);
-    echo ("$dobleSalto");
     
+echo ("$dobleSalto");    
 
     //Añadir
     $frutas[] = "Coco";
     echo "<pre>";
     print_r($frutas);
     echo "</pre>";
-    echo ("$dobleSalto");
     
+echo ("$dobleSalto");    
 
     //Añadir donde yo quiera (con lo que conlleva)
     //PLANTILLA: $array[posicion] = "nuevoValor";
@@ -52,8 +52,8 @@
     echo "<pre>";
     print_r($frutas);
     echo "</pre>";
-    echo ("$dobleSalto");
-
+    
+echo ("$dobleSalto");
 
     //Eliminar valores
     //PLANTILLA: unset($array[valor]);
@@ -62,8 +62,8 @@
     echo "<pre>";
     print_r($frutas);
     echo "</pre>";
-    echo ("$dobleSalto");
 
+echo ("$dobleSalto");
 
     //Modificar valores
     //PLANTILLA: $array[posicion] = "nuevoValor";
@@ -71,16 +71,15 @@
     echo "<pre>";
     print_r($frutas);
     echo "</pre>";
-    echo ("$dobleSalto");
+
+echo ("$dobleSalto");
 
 
     // --------------- \\
 
     //PARA VER EL TAMAÑO DEL ARRAY
     //PLANTILLA: .count(array);
-
     echo "El tamaño del array frutas es: ".count($frutas);
-
 
     //[lo que hace]
     //PLANTILLA: array_values($array);
@@ -110,6 +109,7 @@ echo ("$dobleSalto");
     var_dump((array_key_exists("algo", $animales)));
 
 echo ("$dobleSalto");
+
     //OPERACION DE FUSION NULO
     //PLANTILLA: [array] ?? valor a salir
     //Sirve para combrobar si una varibale tien un valor distinto a nulo, en el caso en el que esa variable tenga valor nulo se muestra un valor/mensaje alternativo
