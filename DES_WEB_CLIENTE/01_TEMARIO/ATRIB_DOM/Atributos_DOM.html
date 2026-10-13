@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATRIBUTOS CON ARBOL DOM</title>
+    <script src="Atributos_DOM.js"></script>
+    <style>
+    body {
+        background-color: white;
+        color: black;
+        font-family: Arial, sans-serif;
+    }
+
+    table {
+        background-color: #f0f0f0;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+    </style>
+</head>
+<body>
+
+    <table id="miTabla" width="300px" height="200px" border="1px" align="center">
+        <thead>
+            <tr>
+                <th>Artista / Grupo</th>
+                <th>Álbum</th>
+                <th>Año</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Queen</td>
+                <td>A Night at the Opera</td>
+                <td>1975</td>
+            </tr>
+            <tr>
+                <td>Pink Floyd</td>
+                <td>The Dark Side of the Moon</td>
+                <td>1973</td>
+            </tr>
+        </tbody>
+    </table>
+<br>
+    <input type="button" value="ApartadoA" onclick="apartadoA()">
+<br>
+    <input type="button" value="ApartadoB" onclick="apartadoB()">
+<br>
+    <input type="button" value="ApartadoC" onclick="apartadoC()">
+</body>
+</html>
