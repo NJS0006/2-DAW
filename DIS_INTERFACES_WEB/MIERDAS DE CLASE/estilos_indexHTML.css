@@ -1,0 +1,38 @@
+div {
+    margin: 15px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+/* UNIDADES ABSOLUTAS */
+.absoluta {
+    width: 900px;
+}
+
+/* --------------- */
+
+/* UNIDADES RELATIVAS */
+.contenedor {
+    width: 70%;
+}
+
+.porcentaje {
+    width: 50%;
+}
+
+/* --------------- */
+/* "HERENCIA */
+
+.padre {
+    font-size: 20px;
+}
+
+.relativaPadre{
+    font-size: 2em; 
+    /* Serian 40px (2 * tamaño fuente del padre) */
+}
+
+.relativaRaiz{
+    font-size: 2rem;
+    /* (num * fuente raiz) */
+}

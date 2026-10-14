@@ -1,0 +1,25 @@
+ul li:first-child{
+    color: red;
+}
+
+ul li:nth-child(2){
+    color: yellow;
+}
+
+ul li:last-child{
+    color: red
+}
+
+
+ol li:first-child{
+    color: blue;
+}
+
+ol li:nth-child(2){
+    color: beige;
+}
+
+ol li:last-child{
+    color: blue;
+}
+
