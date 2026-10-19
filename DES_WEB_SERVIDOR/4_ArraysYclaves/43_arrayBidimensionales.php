@@ -20,7 +20,7 @@
         echo "$jueguitos[2][2]";
 
         //Meter
-        //plantilla: nombre_array[] = ["categoria1", "categoria2", "categoria3]
+        //plantilla: nombre_array[] = ["categoria1", "categoria2", "categoria3"]
         $jueguitos = ["DSIII", "Souls", 40];
 
         //Recorrer
@@ -29,7 +29,6 @@
                 echo "$caracteristicas";
             }
         }
-
 
         for ($i = 0; $i < count($jueguitos); $i++){
             for($j = 0; $j < count($jueguitos[i]); $j++){
@@ -46,6 +45,9 @@
 
         //Sacar al navegador
         echo "<pre>"; print_r($jueguitos); echo "</pre>";
+
+
+
         $personas = [
             "Ana" => ["dni" => "12341234A", "edad" => 23],
             "Alberto" => ["dni" => "12341234B", "edad" => 34],
@@ -64,8 +66,7 @@
         echo "$resultado"
 
         //Sacar en un array indexado la columna de las categorias del array jueguitos y en otro array, la columna de los precios
-
-        
+        //PLANTILLA: array_column($array_original, 'nombre_de_la_clave');
     ?>
 </body>
 </html>

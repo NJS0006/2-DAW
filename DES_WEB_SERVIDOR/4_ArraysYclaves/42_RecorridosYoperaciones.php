@@ -31,7 +31,9 @@ echo "<br>";
      * ksort() => Ordena array indexado menor - mayor POR CLAVES
      * krsort() => Ordena array indexado mayor - menor POR CLAVES
      */
+    
     $notas = ["Ana" => 7, "Leo" => 9, "Samu" => 3, "Alba" => 4];
+
 /* sort */
     $copia = $notas;
     sort($copia);
@@ -39,8 +41,8 @@ echo "<br>";
     print_r($copia);
     echo "</pre>";
 
-    
 echo "<br>";
+
 /* rsort() */
     $copia = $notas;
     rsort($copia);
@@ -49,6 +51,7 @@ echo "<br>";
     echo "</pre>";
 
 echo "<br>";
+
 /* asort() */
     $copia = $notas;
     asort($copia);
@@ -57,6 +60,7 @@ echo "<br>";
     echo "</pre>";
 
 echo "<br>";
+
 /* arsort() */
     $copia = $notas;
     arsort($copia);
