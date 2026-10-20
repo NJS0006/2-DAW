@@ -108,7 +108,6 @@ echo "<br><hr><br>";
                 if(isset($_POST["nombre"]) && isset($_POST["edad"])){
                     $guardadoNombre = $_POST["nombre"];
                     $guardadoEdad = $_POST["edad"];
-<<<<<<< HEAD
                     // echo "Me llamo $guardadoNombre y tengo $guardadoEdad años";
                 }
                 // else{
@@ -118,17 +117,6 @@ echo "<br><hr><br>";
         ?>
 <br>
 <br><hr><br>
-=======
-                    echo "Me llamo $guardadoNombre y tengo $guardadoEdad años";
-                }
-                else{
-                    echo "Como voy a mandar un formulario sin datos gilipollas?";
-                }
-            }
-        ?>
-<br>
-<br><hr>
->>>>>>> 52069a2510a4735a561403c8d827cf2336e58e25
 
         <!-- HACER UN CONTADOR -->
         <p>La pagina no recuerda nada de la ejecucion anterior iclusive los datos que se pasaron. Vamos a ver una forma en la que podemos "recordar" un dato usando "input hidden"</p>
@@ -136,19 +124,11 @@ echo "<br><hr><br>";
             //Inicializar el contador
             $contador = 0;
             //Comprobar si existe
-<<<<<<< HEAD
             if(isset($_POST["contador"])){
                 $contador = $_POST["contador"];
             }
 
             if(isset($_POST["accion"])){
-=======
-            if(assert($_POST["contador"])){
-                $contador = $_POST["contador"];
-            }
-
-            if(assert($_POST["accion"])){
->>>>>>> 52069a2510a4735a561403c8d827cf2336e58e25
                 if($_POST["accion"] == "SUMAR") $contador++;
                 else $contador--;
             }
@@ -159,11 +139,6 @@ echo "<br><hr><br>";
             <p>C0NTADOR: <?= $contador ?></p>
             <input type="submit" name="accion" value="RESTAR">
             <input type="submit" name="accion" value="SUMAR">
-<<<<<<< HEAD
-
-            
-=======
->>>>>>> 52069a2510a4735a561403c8d827cf2336e58e25
         </form>
 </body>
 </html>
