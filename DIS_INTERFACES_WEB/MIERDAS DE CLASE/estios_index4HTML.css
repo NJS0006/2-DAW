@@ -1,0 +1,36 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+
+/* Estilo cuando se visualiza en pantalla */
+@media screen {
+    body {
+        background-color: lightblue;
+    }
+    h1{
+        color: darkblue;
+    }
+
+    nav {
+        background-color: navy;
+        color: white;
+        padding: 12px;
+    }
+}
+
+/* MENORES QUE */
+/* @media (max-width: 800px){
+    /* Se aplica en pantallas MENORES a 800px
+    p {
+        font-size: 20px;
+    }
+} */
+
+/* MAYOR QUE */
+@media (min-width: 800px){
+    /* Se aplica en pantallas MENORES a 800px */
+    p {
+        font-size: 20px;
+    }
+}

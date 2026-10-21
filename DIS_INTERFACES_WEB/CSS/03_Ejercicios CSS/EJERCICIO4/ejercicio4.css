@@ -1,0 +1,56 @@
+/* PRINCIPALES */
+body{
+    width: 600px;
+}
+
+em{
+    color: blue;
+}
+
+
+/* ESPECIFICOS */
+
+.titulo{
+    font-size:2em;
+    text-align: center;
+    color: whitesmoke;
+    background-color: black;
+}
+
+/* --------------- */
+
+#apartados{
+    font-size: 1.5em;
+    background-color: chocolate;
+}
+
+.apar1{
+    color: blue;
+}
+
+.apar2{
+    color: green;
+}
+
+.apar3{
+    color: yellow;
+}
+
+.apar4{
+    color: aqua;
+}
+
+.apar5{
+    color: whitesmoke;
+}
+
+.apar6{
+    color: orange;
+}
+
+/* --------------- */
+
+.subApartado{
+    background-color: grey;
+    border: solid 3px;
+}

@@ -1,0 +1,53 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    align-items: center;
+}
+
+.menuNavegacion{
+    text-align: center;
+    margin: 5px;
+    padding-top: 5px;
+}
+
+/* --------------- */
+
+.contenedor{
+    font-size: 12px;
+    font-style: italic;
+    text-align: center;
+    display: inline-flex;
+}
+
+.HTML{
+    width: 90px;
+    height: 90px;
+    margin: 5px;
+    background-color: orange;
+}
+
+.JS{
+    width: 90px;
+    height: 90px;
+    margin: 5px;
+    background-color: rgb(255, 234, 0);
+}
+
+.CSS{
+    width: 90px;
+    height: 90px;
+    margin: 5px;
+    background-color: rgb(0, 166, 255);
+}
+
+
+@media (min-width: 300px) and (max-width: 700px) {
+    nav{
+        display: block;
+    }
+
+    .contenedor {
+        display: block;
+    }
+    
+}
