@@ -1,0 +1,19 @@
+#imagenDiv{
+    position: absolute;
+    top: 100px;
+    left: 0px; /* Posición inicial */
+}
+
+#imagenDiv img{
+    width: 200px;
+    height: auto;
+    padding-left: 10px;
+}
+
+.boton{
+    height: 40px;
+    background-color: brown;
+    color: whitesmoke;
+    border:none;
+    cursor: pointer;
+}
