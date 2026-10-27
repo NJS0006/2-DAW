@@ -1,0 +1,34 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,td {
+    border: 1px solid black;
+}
+
+/* Media Queries para el tipo de medio screen */
+
+/* 1. Entre 901px y 1200px: se oculta la columna de prioridad 5 */
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+    .prio-5 {
+        display: none;
+    }
+}
+
+/* 2. Entre 700px y 900px: se ocultan las columnas de prioridad 4 y 5 */
+@media screen and (min-width: 700px) and (max-width: 900px) {
+    .prio-4, 
+    .prio-5 {
+        display: none;
+    }
+}
+
+/* 3. 700px o menos: se ocultan las columnas de prioridad 3, 4 y 5 */
+@media screen and (max-width: 700px) {
+    .prio-3, 
+    .prio-4, 
+    .prio-5 {
+        display: none;
+    }
+}

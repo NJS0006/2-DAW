@@ -1,0 +1,24 @@
+/* Estilos generales para el elemento .box (dispositivos pequeños o por defecto) */
+.box {
+    /* Damos la altura de 100 píxeles que pide el ejercicio */
+    height: 100px;
+    
+    /* Ponemos el fondo de color verde por defecto */
+    background-color: green;
+    
+    /* Un poco de color de texto y centrado para que se lea bien el mensaje */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+
+/* Regla @media: se activa solo cuando la pantalla mide 900px de ancho o más */
+@media (min-width: 900px) {
+    .box {
+        /* Al llegar a los 900px, el fondo cambia automáticamente a azul */
+        background-color: blue;
+    }
+}

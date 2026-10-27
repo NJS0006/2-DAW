@@ -1,0 +1,35 @@
+/* Estilos generales (Pantallas grandes - Horizontal) */
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Coloca los elementos del menú en horizontal */
+}
+
+nav a {
+    display: block;
+    color: white;               /* Enlaces de color blanco */
+    text-decoration: none;      /* Sin subrayado */
+    padding: 15px;              /* Espacio interior de 15px */
+    text-align: center;
+}
+
+/* Media Query para pantallas de 600px o inferior (Menú vertical) */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column; /* Muestra los elementos verticalmente */
+    }
+
+    nav li {
+        width: 100%;            /* Cada opción ocupa todo el ancho disponible */
+        border-bottom: 1px solid #444; /* Añade una línea inferior entre las opciones */
+    }
+
+    nav a {
+        text-align: center;     /* Centra el texto de cada opción */
+    }
+}

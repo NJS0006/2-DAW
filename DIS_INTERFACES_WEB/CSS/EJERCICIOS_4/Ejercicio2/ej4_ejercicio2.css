@@ -1,0 +1,20 @@
+ul li{
+    color: white;
+    background-color: blue;
+    width: 100px;
+    text-align: center;
+    padding: 5px;
+    margin: 3px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+li:hover{
+    background-color: red;
+    width: 110px;
+    padding: 3px;
+    border: 3px solid black;
+}

@@ -1,0 +1,25 @@
+a{
+    color: red;
+    text-decoration: none;
+}
+
+a:hover{ /* PASAR POR ENCIMA */
+    color: white;
+    background-color: red;
+    text-decoration: underline;
+}
+
+a:visited{ /* UNA VEZ VISITADO */
+    color: green;
+    text-decoration: none;
+}
+
+a:active{ /*ENLACE ACTIVO */
+    color: orange;
+    text-decoration: none;
+}
+
+a:focus{ /* ENLACE CON FOCO */
+    color: blue;
+    text-decoration: underline;
+}

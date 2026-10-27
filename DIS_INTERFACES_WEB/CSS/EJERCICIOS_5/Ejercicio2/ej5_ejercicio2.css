@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-size: 42px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 26px;
+    color: darkred;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+p {
+    font-size: 17px;
+    text-align: justify;
+    line-height: 1.7;
+}
+
+p:first-of-type {
+    text-indent: 40px;
+}
+
+ol {
+    list-style-type: upper-roman;
+}
+
+ol > li {
+    font-weight: bold;
+}
+
+ol ul {
+    list-style-type: square;
+}
+
+ol ul li {
+    font-weight: normal;
+}
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid gray;
+}
+
+th {
+    background-color: darkred;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+tr:nth-child(even) {
+    background-color: #eeeeee;
+}
+
+tr:hover {
+    background-color: lightyellow;
+}
+
+td:first-child, th:first-child {
+    font-weight: bold;
+}
+
+td:nth-child(4), 
+td:nth-child(5),
+th:nth-child(4),
+th:nth-child(5) {
+    text-align: center;
+}
+
+td:nth-child(5) {
+    color: darkgreen;
+    font-weight: bold;
+}
