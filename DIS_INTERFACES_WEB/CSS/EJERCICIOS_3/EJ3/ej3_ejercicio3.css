@@ -1,0 +1,41 @@
+/* GENERALES */
+h1 {
+    width: 300px;
+    border: 3px solid blue;
+    padding: 5px;
+}
+
+p{
+    width: 300px;
+}
+
+ul li{
+    font-weight: bold;
+    color: red;
+}
+
+/* ESPECIFICOS */
+.preg1{
+    color: whitesmoke;
+    font-weight: bold;
+    background-color: grey;
+}
+
+.preg2{
+    color: whitesmoke;
+    background-color: black;
+    font-weight: bold;
+}
+
+.preg3{
+    font-weight: bold;
+    background-color: cyan;
+}
+
+.pregCorrecta{
+    color: green;
+}
+
+.esteNo li{
+    color: black;
+}

@@ -1,0 +1,25 @@
+/* GENERALES */
+table {
+    border-collapse: inherit  ;
+    border: 1px solid #333;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size: 20px;
+}
+
+/* FILAS */
+
+tr:nth-child(1) td{ color: teal; }
+tr:nth-child(2) td{ color: red; }
+tr:nth-child(3) td{ color: blue; }
+tr:nth-child(4) td{ color: orange; }
+tr:nth-child(5) td{ color: purple; }
+tr:nth-child(6) td{ color: olive; }
+tr:nth-child(7) td{ color: fuchsia; }
+tr:nth-child(8) td{ color: green; }
+
+/* COLUMNAS */
+
+td:nth-child(1){ background-color: white;}
+td:nth-child(2){ background-color: red ;}
+td:nth-child(3){ background-color: green;}
+td:nth-child(4){ background-color: blue;}
