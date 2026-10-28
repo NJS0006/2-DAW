@@ -15,7 +15,7 @@
         <label>Numeros: <input type="text" name="numeros" id=""></label>
 <br><br>
         <label>Orden: <input type="text" name="orden" id=""></label>
-    <br><br>
+<br><br>
         <input type="submit" value="Enviar">
     </form>
 
