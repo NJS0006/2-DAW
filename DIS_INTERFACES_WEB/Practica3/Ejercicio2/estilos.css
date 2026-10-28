@@ -1,0 +1,175 @@
+/*Versión de escritorio. NO MODIFICAR*/
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e9eef3;
+    color: #263238;
+}
+
+#pagina {
+    width: 1000px;
+    margin: 20px auto;
+    background-color: white;
+}
+
+.cabecera {
+    background-color: #17324d;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+.titulo {
+    margin: 0;
+    font-size: 36px;
+}
+
+.subtitulo {
+    margin-bottom: 0;
+}
+
+.menu {
+    background-color: #2f6690;
+    text-align: center;
+}
+
+.enlace-menu {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+}
+
+.contenido {
+    padding: 20px;
+}
+
+.presentacion {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.titulo-presentacion {
+    color: #17324d;
+}
+
+.imagen-presentacion {
+    width: 500px;
+    height: auto;
+}
+
+.texto-presentacion {
+    width: 80%;
+    margin: 15px auto;
+    line-height: 1.5;
+}
+
+.titulo-cursos {
+    text-align: center;
+    color: #17324d;
+}
+
+.curso {
+    width: 850px;
+    margin: 25px auto;
+    padding: 20px;
+    background-color: #f4f7fa;
+    border: 1px solid #ccd6df;
+    border-radius: 8px;
+}
+
+.titulo-curso {
+    color: #2f6690;
+    font-size: 24px;
+}
+
+.imagen-curso {
+    width: 250px;
+    height: auto;
+}
+
+.descripcion {
+    line-height: 1.5;
+}
+
+.pie {
+    background-color: #17324d;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/**************/
+/*Añade a partir de aquí los @media necesarios*****/
+
+/* APARTADO B */
+
+@media (min-width: 600px) and (max-width: 1050px) {
+    #pagina{
+        max-width: 90%;
+    }
+
+    header h1{
+        font-size: 28px;
+    }
+
+    nav a{
+        padding: 8px, 12px;
+    }
+
+    .imagen-presentacion{
+        min-width: 80%;
+    }
+    
+    .curso{
+        max-width: 85%;
+    }
+
+    .imagen-curso{
+        width: 180px;
+    }
+}
+
+/* APARTADO C */
+
+@media (max-width: 600px){
+    #pagina{
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .titulo{
+        font-size: 24px;
+    }
+
+    .menu a{
+        display: block;
+    }
+
+    .enlace-menu{
+        padding: 10px;
+    }
+
+    .imagen-presentacion{
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .curso{
+        width: 90%;
+        max-width: 90%;
+    }
+
+    .imagen-curso{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .titulo-curso{
+        font-size: 20px;
+    }
+
+    .descripcion{
+        visibility: hidden;
+    }
+}
