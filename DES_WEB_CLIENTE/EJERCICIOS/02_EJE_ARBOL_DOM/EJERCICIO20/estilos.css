@@ -1,0 +1,21 @@
+/* Primera clase para maquetar el párrafo original */
+.uno {
+    width: 300px;
+    height: 80px;
+    border: 2px solid #000;
+    font-size: 14px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Segunda clase para maquetar los párrafos generados dinámicamente */
+.dos {
+    width: 300px;
+    height: 80px;
+    border: 2px dashed #008cba;
+    font-size: 14px;
+    background-color: #e0f7fa;
+    padding: 10px;
+    margin-bottom: 10px;
+}
