@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <!--
+    
     <h3>EJERCICIO1</h3>
     <p>Crea un formulario que contenga dos campos de texto; el primero recogerá una serie de números separados por comas y el segundo recogerá el orden en el que se mostrará dicha cadena. Usar el método post en el formulario. Usar explode e implode para este ejercicio. NO USAR ARRAY_MULTISORT()</p>
     <form action="" method="post">
@@ -20,26 +20,26 @@
     </form>
 
     <?php
-        // ($_SERVER["REQUEST_METHOD"] == "POST");
+        ($_SERVER["REQUEST_METHOD"] == "POST");
         
-        // if (isset($_POST["formularios"]) && $_POST["formularios"] == "ej1"){
-        //     $numeros = $_POST["numeros"];
-        //     $orden = $_POST["orden"];
-        //     $numeros = explode(",", $numeros);
-        //     switch ($orden) {
-        //         case ('asc'):
-        //             sort($numeros);
-        //         break;
+        if (isset($_POST["formularios"]) && $_POST["formularios"] == "ej1"){
+            $numeros = $_POST["numeros"];
+            $orden = $_POST["orden"];
+            $numeros = explode(",", $numeros);
+            switch ($orden) {
+                case ('asc'):
+                    sort($numeros);
+                break;
                 
-        //         case ('desc'):
-        //             rsort($numeros);
-        //         break;
+                case ('desc'):
+                    rsort($numeros);
+                break;
 
-        //         default:
-        //         echo "Eres gilipollas";
-        //     }
-        //     echo "<pre>"; print_r($numeros); echo "</pre>";
-        // }
+                default:
+                echo "Eres gilipollas";
+            }
+            echo "<pre>"; print_r($numeros); echo "</pre>";
+        }
     ?>
 
 
@@ -99,7 +99,7 @@
         // }
     ?>
 
-    -->
+
     
     <h3>EJERCICIO 4</h3>
     <p>
@@ -134,6 +134,31 @@
 
         echo "<pre>"; print_r($arrayAsig); echo "</pre>";
 
+    ?>
+
+
+    <h3>EJERCICIO 5</h3>
+    <p>Dado un array bidimensional, crea un formulario con dos listas desplegables en el que en la primera lista se especifique a traves de que columna vamos a ordenar y la seunda especifica el orden que se aplicará</p>
+
+    <!-- HTML -->
+    <form action="tabla.php" method="post">
+        <input type="hidden" name="formularios" value="ej5">
+        <select name="columna">
+            
+            <option disable selected>ELIGE UNA PUTA OPCION</option>
+            <option value="id">ID</option>
+            <option value="nombre">NOMBRE</option>
+            <option value="salario">SALARIO</option>
+        </select>
+    </form>
+
+
+    <!-- PHP -->
+    <?php
+        ($_SERVER["REQUEST_METHOD"] == "POST");
+        if (isset($_POST["formularios"]) && $_POST["formularios"] == "ej5"){
+            
+        }
     ?>
 </body>
 </html>
