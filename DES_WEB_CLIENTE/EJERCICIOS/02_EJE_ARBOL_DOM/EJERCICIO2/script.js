@@ -54,7 +54,7 @@ btnAlineacion.addEventListener("click", function () {
 
     let estilos = window.getComputedStyle(tabla);
 
-    // SACER CUALES HAY
+    // SABER CUALES HAY
     let alineacion = estilos.textAlign;
 
     alert("tabla tiene una alineacion: " + alineacion);

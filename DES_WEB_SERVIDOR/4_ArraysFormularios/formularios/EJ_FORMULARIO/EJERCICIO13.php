@@ -38,31 +38,54 @@
 
     if ($_SERVER["REQUEST_METHOD"] == "POST"){
         if(isset($_POST["formulario"])){
-
+            
             $salarioBruto = $_POST["salarioBruto"];
-            $totalRobado = 0;
-            $numeroTramo = 0;
 
-            foreach ($tramos as $tramo){
-                list($min, $max, $porentaje) = $tramo;
-
-                // ENTRADA CON CALCULO MAX
-                if(($salarioBruto > $min)&&($salarioBruto > $max)){
-                    $total = ($max - $min) / $porentaje;
-                    $totalRobado += $total;
-                    $numeroTramo++;
-                }
-                // CALCULO DE NUSTRO SALARIO
-                else if (($salarioBruto > $min)&&($salarioBruto < $max)){
-                    $tuTotal = ($salarioBruto - $min) / $porentaje;
-                    $totalRobado += $tuTotal;
-                    $numeroTramo++;
-                }
-                echo "<br>Total retenido: " . $totalRobado."<br>";
-                echo "<br>Número de tramos: " . $numeroTramo."<br>";
+            if(!is_numeric($salarioBruto) || $salarioBruto < 0){
+                echo "<br>Como COÑO vas a meterme un salario que no sea un numero o UN NUMERO MERO QUE 0 <br><br> GILIPOLLAS";
             }
-                // echo "<br>Total retenido: " . $totalRobado."<br>";
-                // echo "<br>Número de tramos: " . $numeroTramo."<br>";
+            else{
+                $totalImpuestos = 0;
+                $numeroTramo = 0;
+    
+                foreach ($tramos as $tramo){
+                    list($min, $max, $porcentaje) = $tramo;
+    
+                    // ENTRADA CON CALCULO MAX
+                    if ($salarioBruto > $max){
+                        $baseTramo = ($max - $min);
+                        $totalImpuestos += $baseTramo * $porcentaje;
+                        $numeroTramo++;
+                    }
+                    // CALCULO DE NUSTRO SALARIO
+                    else if (($salarioBruto > $min)&&($salarioBruto <= $max)){
+                        $baseTramo = ($salarioBruto - $min);
+                        $totalImpuestos += $baseTramo * $porcentaje;
+                        $numeroTramo++;
+                    }
+                }
+
+                $salarioNeto = $salarioBruto - $totalImpuestos;
+
+                // 2. MOSTRAR LA TABLA DE RESULTADOS
+                echo "<br><br>";
+                echo "<table border='1' cellpadding='8' cellspacing='0'>";
+                echo "<tr>
+                        <th>BRUTO</th>
+                        <th>NETO</th>
+                        <th>IMPUESTO TOTAL</th>
+                        <th>NUMERO DE TRAMOS</th>
+                    </tr>";
+                echo "<tr>
+                        <td>" . number_format($salarioBruto, 2) . " €</td>
+                        <td>" . number_format($salarioNeto, 2) . " €</td>
+                        <td>" . number_format($totalImpuestos, 2) . " €</td>
+                        <td>" . $numeroTramo . "</td>
+                    </tr>";
+                echo "</table>";
+            }
         }
+
+
     }
 ?>
