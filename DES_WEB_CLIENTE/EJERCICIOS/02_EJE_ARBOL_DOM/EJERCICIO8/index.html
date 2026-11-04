@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIO 5 | ARBOL DOM</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .contenedor-imagen {
+        text-align: center;
+        background: white;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .contenedor-imagen h2 {
+        margin-bottom: 15px;
+        color: #333;
+    }
+
+    #imagenRollover {
+        width: 400px;
+        height: auto;
+        border-radius: 8px;
+        transition: transform 0.2s ease;
+    }
+</style>
+
+<body>
+    <div class="contenedor-imagen">
+        <h2>Efecto Rollover</h2>
+        <!-- Imagen con un ID único y su imagen por defecto -->
+        <img id="imagenRollover" src="/DES_WEB_CLIENTE/EJERCICIOS/02_EJE_ARBOL_DOM/EJERCICIO4/IMG/foto5.png"
+            alt="Imagen en estado original">
+    </div>
+</body>
+
+</html>
+<script src="ejercicio8.js"></script>

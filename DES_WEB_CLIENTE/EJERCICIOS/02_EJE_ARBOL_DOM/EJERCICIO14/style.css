@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* LISTA GENERAL */
+
+.lista {
+    display: contents;
+}
+
+.lista ul {
+    margin: 20px;
+}
+
+.lista li {
+    margin: 10px;
+}
+
+/* COSAS ESPEFICICAS */
+
+#interLista1 {
+    visibility: hidden;
+}
+
+#interLista2 {
+    visibility: hidden;
+}
+
+#interLista3 {
+    visibility: hidden;
+}

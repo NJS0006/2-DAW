@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 18 - Generador de Monedas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="contenedor-principal">
+        <!-- Div superior con el contador de monedas -->
+        <div id="monedasDiv" class="caja-monedas">
+            MONEDAS: <span id="contadorMonedas">0</span> 🪙
+        </div>
+
+        <h2>Coin Maker</h2>
+
+        <!-- Bloque de progreso y botón -->
+        <div class="grupo-control">
+            <label for="barraProgress">Generador de monedas:</label>
+            <progress id="barraProgress" value="0" max="100"></progress>
+            <button id="btnGenerar">Generar moneda</button>
+        </div>
+
+        <p id="mensajeEstado"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

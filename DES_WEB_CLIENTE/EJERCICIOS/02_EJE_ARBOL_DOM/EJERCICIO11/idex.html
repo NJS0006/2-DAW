@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIO 11 | ARBOL DOM</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .contenedor-divs {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* Estilos comunes para los tres DIVs (300x100px) */
+    .caja {
+        width: 300px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        border-radius: 6px;
+    }
+
+    /* Colores de fondo distintos para cada uno */
+    #div1 {
+        background-color: #e53935;
+        /* Rojo */
+        cursor: pointer;
+    }
+
+    #div2 {
+        background-color: #43a047;
+        /* Verde */
+    }
+
+    #div3 {
+        background-color: #1e88e5;
+        /* Azul */
+    }
+
+    /* --- CLASES PARA OCULTAR EL SEGUNDO DIV --- */
+
+    /* Apartado a) Ocultar usando visibility */
+    .oculto-visibility {
+        visibility: hidden;
+        /* Se oculta pero el espacio sigue reservado en la página */
+    }
+
+    /* Apartado b) Ocultar usando display */
+    .oculto-display {
+        display: none;
+        /* Desaparece por completo y el resto de elementos se desplazan */
+    }
+</style>
+
+<body>
+    <div class="contenedor-divs">
+        <!-- Primer DIV (El disparador del evento) -->
+        <div id="div1" class="caja">Soy el DIV 1</div>
+
+        <!-- Segundo DIV (El que se oculta y aparece) -->
+        <!-- Nota: Para probar el apartado (a), usa la clase "oculto-visibility". Para el (b), usa "oculto-display" -->
+        <div id="div2" class="caja oculto-visibility">Soy el DIV 2</div>
+
+        <!-- Tercer DIV -->
+        <div id="div3" class="caja">Soy el DIV 3</div>
+    </div>
+</body>
+
+</html>
+<script src="ejercicio11.js"></script>

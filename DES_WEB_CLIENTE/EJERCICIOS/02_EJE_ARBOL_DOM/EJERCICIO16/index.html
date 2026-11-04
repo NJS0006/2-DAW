@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIO 16 | ARBOL DOM</title>
+</head>
+<link rel="stylesheet" href="estilos.css">
+
+<body>
+    <div class="contenedor-principal">
+        <h2>Simulación de Carga</h2>
+
+        <!-- Bloque para el elemento METER -->
+        <div class="grupo-control">
+            <label for="barraMeter">Elemento Meter:</label>
+            <meter id="barraMeter" min="0" max="100" value="0"></meter>
+            <button id="btnMeter">Cargar Meter</button>
+        </div>
+
+        <hr>
+
+        <!-- Bloque para el elemento PROGRESS -->
+        <div class="grupo-control">
+            <label for="barraProgress">Elemento Progress:</label>
+            <progress id="barraProgress" value="0" max="100"></progress>
+            <button id="btnProgress">Cargar Progress</button>
+        </div>
+
+        <!-- Mensaje de aviso cuando se completa -->
+        <p id="mensajeAlerta"></p>
+    </div>
+</body>
+
+</html>
+<script src="script.js"></script>

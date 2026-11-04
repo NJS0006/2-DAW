@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: white;
+    margin: 0;
+    padding: 20px;
+    overflow-x: hidden;
+}
+
+.controles {
+    margin-bottom: 25px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+button {
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #1db954;
+    color: white;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background-color: #1aa34a;
+}
+
+#mensajeGanador {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffd700;
+}
+
+.pista {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    border-left: 3px dashed #555;
+    border-right: 3px dashed #ff4444; /* Línea de meta */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 10px;
+}
+
+.corredor {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+/* Colores de fondo distintos para cada div musical */
+#div1 { background-color: #e53935; } /* Rock */
+#div2 { background-color: #fb8c00; } /* Jazz */
+#div3 { background-color: #43a047; } /* Pop */
+#div4 { background-color: #8e24aa; } /* Electro */
