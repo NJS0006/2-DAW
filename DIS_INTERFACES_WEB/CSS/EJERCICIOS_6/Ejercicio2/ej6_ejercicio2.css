@@ -11,6 +11,7 @@ th,td {
 
 /* 1. Entre 901px y 1200px: se oculta la columna de prioridad 5 */
 @media screen and (min-width: 901px) and (max-width: 1200px) {
+    
     .prio-5 {
         display: none;
     }
