@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>EJERCICIO 11 | ARRAYS Y FORMULARIOS</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
     <h3>CESTA DE LA COMPRA</h3>
@@ -20,9 +21,12 @@
 
     <form action="" method="post">
         <input type="hidden" name="formulario" value="EjListaCompra">
-        <label> Cantidad Manzanas (1.50€/kg - Alimentacion): </label> <input type="text" name="manzanas" id=""> <br><br>
-        <label> Cantidad Leche (0.90€/kg - Alimentacion):    </label> <input type="text" name="manzanas" id=""> <br><br>
-        <label> Cantidad Pan (1.20€/kg - Alimentacion): </label> <input type="text" name="manzanas" id=""> <br><br>
+        <label> Cantidad Manzanas (1.50€/kg - Alimentacion): </label> <input type="text" name="manzanas">
+<br><br>
+        <label> Cantidad Leche (0.90€/kg - Alimentacion):    </label> <input type="text" name="manzanas"> 
+<br><br>
+        <label> Cantidad Pan (1.20€/kg - Alimentacion): </label> <input type="text" name="manzanas">        
+<br><br>
         <label> Cantidad Cerveza (2.50€/kg - Alimentacion): </label> <input type="text" name="manzanas" id=""> <br><br>
         <label> Cantidad Refresco (1.80€/kg - Alimentacion): </label> <input type="text" name="manzanas" id=""> <br><br>
         <label> Cantidad Ratón inalámbrico (25.00€/kg - Alimentacion): </label> <input type="text" name="manzanas" id=""> <br><br>
