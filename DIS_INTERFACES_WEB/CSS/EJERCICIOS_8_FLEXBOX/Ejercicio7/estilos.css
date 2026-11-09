@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    margin: 0;
+    padding: 25px;
+    text-align: center;
+    background-color: #263746;
+    color: white;
+}
+
+.categorias {
+    width: 90%;
+    height: 550px;
+    margin: 30px auto;
+    padding: 25px;
+    border: 3px solid #263746;
+    background-color: white;
+
+    /* Añade aquí las propiedades Flexbox necesarias */
+   
+    
+}
+
+.categoria {
+    width: 30%;
+    height: 180px;
+    padding: 20px;
+    text-align: center;
+    background-color: #dfe6e9;
+    border: 2px solid #3498db;
+    border-radius: 8px;
+}
+
+.categoria span {
+    font-size: 40px;
+}
+
+.categoria h2 {
+    margin: 10px 0;
+    color: #263746;
+    font-size: 20px;
+}
+
+.categoria p {
+    margin: 0;
+    color: #555;
+}
