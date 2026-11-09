@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h4>Catalogo de Peliculas Disponibles:</h4>
+    <form action="soluciones.php" method="post">
+        <input type="hidden" name="ejercicios" value="ej1">
+
+        <p><b>Inception</b>(Ciencia Ficción) - 3.5€/dia</p>
+        <label> Dias de alquiler: <input type="text" name="inception"></label>
+<br>
+        <p><b>Parasite</b>(Thriller) - 3€/dia</p>
+        <label> Dias de alquiler: <input type="text" name="parasite"></label>
+<br>
+        <p><b>Interstellar</b>(Ciencia Ficcion) - 3.5€/dia</p>
+        <label> Dias de alquiler: <input type="text" name="interstellar"></label>
+<br>
+        <p><b>Joker</b>(Drama) - 2.5€/dia</p>
+        <label> Dias de alquiler: <input type="text" name="joker"></label>
+<br>
+        <p><b>Avengers: Endgame</b>(Acción) - 4€/dia</p>
+        <label> Dias de alquiler: <input type="text" name="avengers"></label>
+<br><br>
+        <input type="submit" value="Calcular Total del Alquiler">
+    </form>
+
+<br>
+<!-- //////////////////// --> <p>--------------------</p>
+
+
+
+    <h4>Ejercicio 2 | Listado de notas de clase</h4>
+    <form action="soluciones.php" method="post">
+        <input type="hidden" name="ejercicios" value="ej2">
+
+        <label> Grupo:</label>
+        <select name="grupo">
+            <option value="todos">Todos</option>
+            <option value="DAM">DAM</option>
+            <option value="DAW">DAW</option>
+        </select>
+
+        <input type="submit" value="VER LISTADO">
+    </form>
+</body>
+</html>
