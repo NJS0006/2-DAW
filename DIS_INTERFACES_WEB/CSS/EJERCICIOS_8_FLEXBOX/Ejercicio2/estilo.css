@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.item {
+    font-size: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: sans-serif;
+}
+
+/* Colores correspondientes a cada elemento en orden inverso */
+.item:nth-child(1) { background-color: lightgreen; }
+.item:nth-child(2) { background-color: greenyellow; }
+.item:nth-child(3) { background-color: lightgray; }
+.item:nth-child(4) { background-color: red; }
+.item:nth-child(5) { background-color: chocolate; }
+.item:nth-child(6) { background-color: yellow; }
+.item:nth-child(7) { background-color: black; }
+.item:nth-child(8) { background-color: magenta; }
+.item:nth-child(9) { background-color: skyblue; }
+.item:nth-child(10) { background-color: lightgreen; }
