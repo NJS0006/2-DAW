@@ -23,7 +23,7 @@ html, body {
     font-family: sans-serif;
 }
 
-
+/* Colores correspondientes a cada elemento en orden inverso */
 .item:nth-child(1) { background-color: lightgreen; }
 .item:nth-child(2) { background-color: greenyellow; }
 .item:nth-child(3) { background-color: lightgray; }
