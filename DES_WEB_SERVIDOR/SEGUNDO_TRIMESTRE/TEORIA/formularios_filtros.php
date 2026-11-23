@@ -61,6 +61,14 @@
                     echo $entero;
                     echo $_GET["entero"];
                 }
+
+                // www.google.com FALSE
+                // https://www.google.com TRUE
+
+                // algo@algo.algo TRUE
+                
+                // filter_var($entero, FILTER_VALIDATE_IP) ==>> (0-255).255.255.255
+                
             }
         }
     ?>
