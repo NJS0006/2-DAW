@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body {
+    margin: 0;
+}
+
+.flex-container {
+    background-color: bisque;
+    border: 1px solid black;
+    margin: auto;
+    display: flex;
+}
+
+article {
+    background-color: aqua;
+    width: 120px;
+    height: 90px;
+    padding: 3px;
+    margin: 5px;
+}
+
+section article:nth-child(5){
+    order: -1;
+}
+
+section article:first-child{
+    order: 1;
+}
+
+article:nth-child(2), article:nth-child(4){
+    flex-grow: 2;
+} 
+
+article:nth-child(3){
+    flex-grow: 3;
+}
+
+/* ---------------- */
+
+.pagina{
+    background-color: bisque;
+    border: 1px solid black;
+    display: flex;
+}
+
+.menuLateral{
+    border: 1px solid black;
+    background-color: aqua;
+    flex-grow: 1;
+    padding: 10px;
+}
+
+.principal{
+    border: 1px solid black;
+    background-color: chocolate;
+    flex-grow: 3;
+}
+
+.publicidad{
+    border: 1px solid black;
+    background-color: aqua;
+    flex-grow: 1;
+}
