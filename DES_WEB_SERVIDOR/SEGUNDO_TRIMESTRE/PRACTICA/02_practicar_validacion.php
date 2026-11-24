@@ -11,3 +11,4 @@
  * Si no hay errores, aparece en verde debajo del formulario: Stock insertado correctamente: "Nombre", "Stock" y "Categoria"
  * 
  */
+

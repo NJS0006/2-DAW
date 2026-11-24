@@ -34,14 +34,7 @@
             
             // 1. RECOGIDA DE DATOS EN VARIABLES TEMPORALES
             $tmp_precio = trim($_POST["precio"] ?? "");
-
-            // OPCION 1
-            // if(isset($_POST["iva"])) $tmp_iva = $_POST["iva"];
-            // else $tmp_iva = "";
-
-            // OPCION 2
             $tmp_iva = $_POST["iva"] ?? "";
-
 
             // 2. VALIDACIÓN DE DATOS
             // PRECIO

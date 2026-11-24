@@ -24,7 +24,7 @@
      * 
      * Es la herramienta pensada para los datos de un formulario, que siempre SIEMPRE llegan cadenas.
      * 
-     * Si el valor es válido, devuleve el valor ya convertido ("25" pasa a sr int(25)) y si no es valido, devuleve false
+     * Si el valor es válido, devuleve el valor ya convertido ("25" pasa a srt int(25)) y si no es valido, devuleve false
      * 
      * intval() siempre devuelve un dato, aunque no sea correcto; filter_var() rechaza o que no es o no se puede convertir a entero (ESTO EN EL CASO DE QUE APLIQUEMOS EL FILTRO DE ENTEROS)
      * 
