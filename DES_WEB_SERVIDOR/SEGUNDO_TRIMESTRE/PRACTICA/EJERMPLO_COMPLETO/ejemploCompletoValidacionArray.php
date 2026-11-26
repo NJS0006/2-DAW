@@ -17,7 +17,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="03_EjmComptValid.css">
+    <link rel="stylesheet" href="ejmComptValid.css">
     <?php
         // SALIDA DE ERRORES DE PHP
         error_reporting(E_ALL);
@@ -31,6 +31,7 @@
         $email_tmp = "";
         $edadTexto = "";
         $taller_tmp = "";
+        $errores = [];
 
         // HACEMOS LOS ERRORES
         if($_SERVER["REQUEST_METHOD"] == "POST"){
@@ -45,27 +46,24 @@
 
             // VALIDAR CADA ERROR Y QUE SE AÑADA EN EL ARRAY
             if ($nombre_tmp == "" || strlen($nombre_tmp) < 3 || strlen($nombre_tmp) > 40){
-                $err_nombre = "El nombre no es valido, debe ser un nombre dentro los 3 y los 40 caracteres <br>";
-                echo ("$err_nombre");
+                $errores[] = "El nombre no es valido, debe ser un nombre dentro los 3 y los 40 caracteres <br>";
             }
             if(filter_var($email_tmp, FILTER_VALIDATE_EMAIL) === false){
-                $err_email = "Correo no valido (gilipollas, ni eso sabes hacer bien) <br>";
-                echo ("$err_email");
+                $errores[] = "Correo no valido (gilipollas, ni eso sabes hacer bien) <br>";
             }
 
             // COMPROBACIONES EDAD
             if ($edadTexto == ""){
-                $err_edad = "La edad tiene no puede estar vacia <br>";
+                $errores[] = "La edad tiene no puede estar vacia <br>";
             }
             else{
                 $edadFiltrada = filter_var($edadTexto, FILTER_VALIDATE_INT);
                 if($edadFiltrada === false){
-                    $err_edad = "La edad debe de ser un numero <br>";
-                    echo ("$err_edad");
+                    $errores[] = "La edad debe de ser un numero <br>";
                 }
                 else{
                     if($edadFiltrada < 18 || $edadFiltrada > 80){
-                        $err_edad = "la edad debe de ser un numero MAYOR de 18 y MENOR de 80 <br>";
+                        $errores[] = "la edad debe de ser un numero MAYOR de 18 y MENOR de 80 <br>";
                     }
                     else{
                         $edadTexto = $edadFiltrada;
@@ -83,14 +81,12 @@
             $whitelistTalleres = ["phpDesdeCero", "JsPrincipiantes", "GitHubPrincipio"];
 
             if($taller_tmp == ""){
-                $err_taller = "Tienes que seleccionar obligatoriamente un taller <br>";
-                echo ("$err_taller");
+                $errores[] = "Tienes que seleccionar obligatoriamente un taller <br>";
             }
             else{
                 // VALIDACION CON EL WHITELIST (PROTECCION CONTRA MANIPULACION DEL FORMULATIO (F12))
                 if(!in_array($taller_tmp, $whitelistTalleres)){
-                    $err_taller = "No intentes cambiarme la pagina payaso <br>";
-                    echo ("$err_taller");
+                    $errores[] = "No intentes cambiarme la pagina payaso <br>";
                 }
                 else{
                     $taller = $taller_tmp;
@@ -107,18 +103,36 @@
             $whitelistTurnos = ["turnoMañana", "turnoTarde"];
 
             if($turnos_tmp == ""){
-                $err_turnos = "Tienes que seleccionar obligatoriamente un turno del dia <br>";
-                echo ("$err_turnos");
+                $errores[] = "Tienes que seleccionar obligatoriamente un turno del dia <br>";
             }
             else{
                 // VALIDACION CON EL WHITELIST (PROTECCION CONTRA MANIPULACION DEL FORMULATIO (F12))
                 if(!in_array($turnos_tmp, $whitelistTurnos)){
-                    $err_turnos = "No intentes cambiarme la pagina payaso <br>";
-                    echo ("$err_turnos");
+                    $errores[] = "No intentes cambiarme la pagina payaso <br>";
                 }
                 else{
                     $turno = $turnos_tmp;
                 }
+            }
+
+            // 3. MOSTRAR EL RESULTADO O LA LISTA DE ERRORES
+            if (count($errores) == 0){
+                // SIEMPRE QUE QUIERA MOSTRAR COSAS QUE HA PASADO EL CLIENTE POR PANTALLA "htmlspecialchars($)"
+                echo "<p class='bien'> Datos introducidos: <br>
+                Nombre: ".htmlspecialchars($nombre). "<br> 
+                Email: ".htmlspecialchars($email). "<br> 
+                Edad:".htmlspecialchars($edad). "</p>";
+
+            }else{
+                ?>
+                <ul>
+                    <?php
+                        foreach ($errores as $error) {
+                            echo "$error". "<br>";
+                        }
+                    ?>
+                </ul>
+            <?php
             }
 
         }
